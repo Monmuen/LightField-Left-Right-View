@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Field Renderer 2021</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="load-wrap">
+    <button id='load'>Load Light Field</button>
+  </div>
+  <div class='controls'>
+    <div>
+      <label for='aperture'>Aperture</label>
+      <input type='range' min='0' max='10' step='0.1' id='aperture' />
+
+    </div>
+    <div>
+      <label for='focus'>Focus</label>
+      <input type='range' min='-0.01' max='0.01' step='0.0001' id='focus' />
+    </div>
+    <div>
+      <button id='view-mode'>View Mode Toggle</button>
+    </div>
+    
+    <div>
+      <label for="stplane">Show ST Plane</label>
+      <input type="checkbox" id="stplane" />
+    </div>
+    <p>Right-click and drag to pan the camera. Left-click and drag to orbit around the light field. Scroll wheel zooms in and out.</p>
+    <p><a href="https://github.com/hypothete/lightfield-webgl2" target="_blank" noreferrer noopener>Source code on Github</a></p>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
